@@ -32,7 +32,6 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   static const platform = MethodChannel('jccd/battery');
   String _batteryLevel = 'Unknown battery level.';
-  int _counter = 0;
 
   Future<void> _getBatteryLevel() async {
     String batteryLevel;
